@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Industrial Inc.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-black': '#1A1A1A',
+                        'brand-greige': 'rgba(224, 224, 219, 1)',
+                        'brand-accent': '#2C3545',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('02_Assets/Home.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-black antialiased bg-brand-greige">
+
+    <!-- Section 1: Header & Hero Section -->
+    <section class="hero-bg h-screen w-full flex flex-col relative">
+        <!-- Header/Navigation -->
+        <header class="w-full z-10 p-6 flex justify-center items-center absolute top-0 left-0">
+            <div class="w-[90%] max-w-[2100px] flex justify-between items-center">
+                <a href="index.html" class="text-xl md:text-2xl font-medium text-white uppercase tracking-wide">PROXY INDUSTRIAL INC.</a>
+                <nav class="hidden md:flex space-x-6 font-normal">
+                    <a href="index.html" class="text-white underline underline-offset-[6px] decoration-1 decoration-white">Home</a>
+                    <a href="about.html" class="text-white hover:text-gray-300">About</a>
+                    <a href="contact.html" class="text-white hover:text-gray-300">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-brand-black bg-opacity-95 z-50 hidden flex flex-col items-center justify-center space-y-8 text-white text-2xl">
+            <button id="mobile-menu-close" class="absolute top-6 right-6 text-white focus:outline-none" aria-label="Close menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="index.html" class="underline underline-offset-[6px]">Home</a>
+            <a href="about.html" class="hover:text-gray-300">About</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact</a>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="flex-grow flex flex-col items-center justify-center text-center px-4 w-full h-full max-w-[1200px] mx-auto">
+            <h1 class="text-4xl md:text-[54px] lg:text-[58px] font-normal text-white mb-6 whitespace-normal md:whitespace-nowrap tracking-tight">Tier-One Quality. Global Economics.</h1>
+            <p class="text-lg md:text-xl text-white mb-2 font-normal">We bridge North American OEMs with vetted, ISO-certified overseas production facilities.</p>
+            <p class="text-lg md:text-xl text-white mb-10 font-normal">Get significant cost savings on custom metal components with risk-free, local project management.</p>
+            <a href="#quote" class="inline-block bg-white text-black text-sm uppercase font-semibold py-[18px] px-[45px] rounded-full hover:bg-gray-200 transition duration-300">REQUEST A QUOTE</a>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="w-full">
+        
+        <!-- Section 2: Core Capabilities -->
+        <section class="min-h-screen flex flex-col justify-center w-full py-16 core-capabilities-section">
+            <div class="w-[90%] mx-auto max-w-[2100px]">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-brand-black mb-[50px] text-left">Core Capabilities</h2>
+                
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
+                <!-- Column 1 -->
+                <div class="flex flex-col">
+                    <img src="02_Assets/Milling Gear Surface.jpg" alt="Milling Gear Surface" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
+                    <p class="text-lg leading-relaxed text-brand-black mb-4">High-mix, medium-to-high volume production for complex geometries.</p>
+                    <p class="text-lg leading-relaxed text-brand-black">We offer 3, 4, and 5-axis milling and turning for a wide range of materials including aluminum, stainless steel, and specialty alloys. Tight GD&T adherence guaranteed.</p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="flex flex-col">
+                    <img src="02_Assets/Casting.jpg" alt="Casting" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
+                    <p class="text-lg leading-relaxed text-brand-black mb-4">Reliable supply chain solutions for heavy industry. We specialize in ductile iron, gray iron, and steel sand castings, as well as closed-die forgings.</p>
+                    <p class="text-lg leading-relaxed text-brand-black">Ideal for agricultural, mining, and heavy equipment manufacturers struggling with local foundry capacity.</p>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="flex flex-col">
+                    <img src="02_Assets/CMM.jpg" alt="CMM Inspection" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
+                    <p class="text-lg leading-relaxed text-brand-black mb-4">Overseas pricing without the friction. All partner facilities are strictly ISO 9001:2015 certified.</p>
+                    <p class="text-lg leading-relaxed text-brand-black">We provide full material certifications, CMM inspection reports, and handle all ocean/air freight, customs clearance, and local delivery directly to your dock.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Request a Quote (Contact Form) -->
+        <section id="quote" class="w-full py-16 md:py-24">
+            <div class="w-[90%] mx-auto max-w-[2100px] grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
+            <!-- Left Column -->
+            <div>
+                <h2 class="text-[52px] font-normal text-brand-black mb-6 leading-tight">Request a Quote</h2>
+                <p class="text-[20px] font-normal leading-[1.6] text-brand-black mb-4 max-w-[85%]">Tell us about your project requirements, estimated quantities, and target lead times.</p>
+                <p class="text-[20px] font-normal leading-[1.6] text-brand-black max-w-[85%]">Submit the form and our engineering team will reply within 24 hours to securely request your STEP files or PDF blueprints for quoting.</p>
+            </div>
+            
+            <!-- Right Column (Form) -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <!-- Replace with your Access Key -->
+<input type="hidden" name="access_key" value="a857c4c8-fc60-42c9-b548-bb53009e4460">
+                <input type="hidden" name="subject" value="New Quote Request - Proxy Industrial">
+                <input type="hidden" name="from_name" value="Proxy Industrial Website">
+                <!-- Honeypot spam protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+                <!-- Row 1: Name -->
+                <div>
+                    <span class="block text-[16px] font-medium text-[#333] mb-2">Name</span>
+                    <div class="flex gap-4">
+                        <div class="w-1/2">
+                            <label for="first-name" class="block text-[15px] font-normal text-[#333] mb-[5px]">First Name (required)</label>
+                            <input type="text" id="first-name" name="first-name" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black">
+                        </div>
+                        <div class="w-1/2">
+                            <label for="last-name" class="block text-[15px] font-normal text-[#333] mb-[5px]">Last Name (required)</label>
+                            <input type="text" id="last-name" name="last-name" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Row 2: Email -->
+                <div>
+                    <label for="email" class="block text-[16px] font-medium text-[#333] mb-[5px]">Email (required)</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black">
+                </div>
+                
+                <!-- Row 3: Message -->
+                <div>
+                    <label for="message" class="block text-[16px] font-medium text-[#333] mb-[5px]">Message (required)</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black"></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="bg-brand-accent text-white text-[16px] font-medium uppercase px-10 py-4 rounded-[50px] hover:opacity-90 transition duration-300 border-none mt-2">SEND</button>
+                </div>
+            </form>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-greige pt-[180px] pb-[100px] border-t border-gray-300 mt-auto">
+        <div class="w-[90%] mx-auto max-w-[2100px] flex flex-col md:flex-row justify-between gap-y-12 pr-[4vw] xl:pr-[8vw]">
+            <!-- Column 1: Brand -->
+            <div class="md:w-1/2 lg:w-6/12">
+                <h3 class="text-[40px] font-normal text-brand-black mb-3">Proxy Industrial Inc.</h3>
+                <p class="text-[20px] font-medium leading-[1.6] text-brand-black">Global manufacturing, local accountability.</p>
+            </div>
+            <!-- Column 2 & 3: Info Container -->
+            <div class="md:w-1/2 lg:w-6/12 flex flex-col sm:flex-row justify-end sm:space-x-[10%] lg:space-x-[15%]">
+                <!-- Column 2 -->
+                <div class="mb-12 sm:mb-0">
+                    <h4 class="text-[24px] font-normal text-brand-black mb-5">Location</h4>
+                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">203-2150 Winston Park Dr<br>Suite #1560<br>Oakville ON L6H 5V1<br>Canada</p>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-[24px] font-normal text-brand-black mb-5">Contact</h4>
+                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">info@proxyindustrial.com<br>+1 (365) 357-2360</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    </main>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); });
+        menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>

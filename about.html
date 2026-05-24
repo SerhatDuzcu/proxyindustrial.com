@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Proxy Industrial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-black': '#1A1A1A',
+                        'brand-greige': 'rgba(224, 224, 219, 1)',
+                        'brand-accent': '#2C3545',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-black antialiased bg-brand-greige flex flex-col min-h-screen">
+
+    <!-- Header/Navigation -->
+    <header class="w-full z-10 p-6 flex justify-center items-center">
+        <div class="w-[90%] max-w-[2100px] flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-medium text-brand-black uppercase tracking-wide">PROXY INDUSTRIAL INC.</a>
+            <nav class="hidden md:flex space-x-6 font-normal">
+                <a href="index.html" class="text-brand-black hover:text-gray-600">Home</a>
+                <a href="about.html" class="text-brand-black underline underline-offset-[6px] decoration-1 decoration-brand-black">About</a>
+                <a href="contact.html" class="text-brand-black hover:text-gray-600">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-black focus:outline-none" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-black bg-opacity-95 z-50 hidden flex flex-col items-center justify-center space-y-8 text-white text-2xl">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white focus:outline-none" aria-label="Close menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="underline underline-offset-[6px]">About</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow w-full py-[120px]">
+        <div class="w-[90%] max-w-[2100px] mx-auto grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-x-[6vw] lg:gap-x-[8vw] items-start">
+            
+            <!-- Left Column: Text -->
+            <div class="order-2 md:order-1 flex flex-col justify-start pr-[2vw]">
+                <h1 class="text-[52px] md:text-[58px] lg:text-[64px] font-normal leading-[1.15] text-brand-black -mt-2 mb-8">
+                    Global Manufacturing Power,<br>Local Accountability.
+                </h1>
+                <p class="text-[20px] lg:text-[22px] leading-[1.6] text-brand-black mb-[24px] max-w-[70%]">
+                    Proxy Industrial Inc. was founded to solve a critical bottleneck in the North American supply chain: the gap between high domestic manufacturing costs and the risk of managing overseas suppliers.
+                </p>
+                <p class="text-[20px] lg:text-[22px] leading-[1.6] text-brand-black mb-[24px] max-w-[70%]">
+                    Based in Ontario, Canada, Proxy Industrial is led by Managing Director Serhat Duzcu, PMP®. Having a background in Mechanical Engineering, Serhat brings over a decade of experience overseeing heavy industrial projects for global OEMs.
+                </p>
+                <p class="text-[20px] lg:text-[22px] leading-[1.6] text-brand-black mb-[24px] max-w-[70%]">
+                    We act as your local, risk-free proxy. By partnering exclusively with heavily vetted, ISO 9001:2015 certified facilities in Turkey's premier industrial zones, we bypass traditional trading companies to deliver direct-to-factory pricing. We handle all blueprint translation, GD&T verification, quality assurance, and DDP logistics locally; delivering tier-one custom components directly to your dock.
+                </p>
+            </div>
+            
+            <!-- Right Column: Image -->
+            <div class="order-1 md:order-2 flex justify-start w-full">
+                <img src="02_Assets/SerhatDuzcuWB.png" alt="Serhat Duzcu" class="w-[93%] max-w-[660px] h-auto block rounded-none object-cover filter-none">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-brand-greige pt-[180px] pb-[100px] border-t border-gray-300 mt-auto">
+        <div class="w-[90%] mx-auto max-w-[2100px] flex flex-col md:flex-row justify-between gap-y-12 pr-[4vw] xl:pr-[8vw]">
+            <!-- Column 1: Brand -->
+            <div class="md:w-1/2 lg:w-6/12">
+                <h3 class="text-[40px] font-normal text-brand-black mb-3">Proxy Industrial Inc.</h3>
+                <p class="text-[20px] font-medium leading-[1.6] text-brand-black">Global manufacturing, local accountability.</p>
+            </div>
+            <!-- Column 2 & 3: Info Container -->
+            <div class="md:w-1/2 lg:w-6/12 flex flex-col sm:flex-row justify-end sm:space-x-[10%] lg:space-x-[15%]">
+                <!-- Column 2 -->
+                <div class="mb-12 sm:mb-0">
+                    <h4 class="text-[24px] font-normal text-brand-black mb-5">Location</h4>
+                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">203-2150 Winston Park Dr<br>Suite #1560<br>Oakville ON L6H 5V1<br>Canada</p>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-[24px] font-normal text-brand-black mb-5">Contact</h4>
+                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">info@proxyindustrial.com<br>+1 (365) 357-2360</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); });
+        menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>
