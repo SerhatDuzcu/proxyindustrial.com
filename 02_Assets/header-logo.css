@@ -1,0 +1,22 @@
+/* Preserve the supplied transparent logo and its 3:1 proportions. */
+.site-logo {
+    display: block;
+    width: clamp(156px, 22vw, 240px);
+    max-width: calc(100% - 48px);
+    flex-shrink: 0;
+}
+.site-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.site-logo--light img {
+    filter: brightness(0) invert(1);
+}
+.site-logo:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 6px;
+}
+.site-logo--light {
+    color: white;
+}
