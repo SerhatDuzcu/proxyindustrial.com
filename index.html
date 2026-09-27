@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proxy Industrial Inc.</title>
+    <title>Industrial Procurement &amp; Equipment Support | Proxy Industrial</title>
+    <meta name="description" content="Industrial procurement and equipment support coordinated by Proxy Industrial. One contact, a clear plan, and project management through completion.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,27 +27,40 @@
     </script>
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('02_Assets/Home.jpg');
+            background-image: radial-gradient(ellipse at 50% 52%, rgba(9, 17, 25, 0.72) 0%, rgba(9, 17, 25, 0.58) 38%, rgba(9, 17, 25, 0.08) 78%), linear-gradient(rgba(9, 17, 25, 0.38), rgba(9, 17, 25, 0.42)), url('02_Assets/Industrial-Collaboration-Clean.png');
             background-size: cover;
-            background-position: center;
+            background-position: 45% center;
+        }
+        @media (max-width: 767px) {
+            .hero-bg { background-position: 42% center; }
+        }
+        .hero-bg h1, .hero-bg p {
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+        }
+        .hero-bg h1 {
+            max-width: 960px;
+            font-weight: 500;
+            text-wrap: balance;
         }
     </style>
 </head>
 <body class="font-sans text-brand-black antialiased bg-brand-greige">
 
     <!-- Section 1: Header & Hero Section -->
-    <section class="hero-bg h-screen w-full flex flex-col relative">
+    <section class="hero-bg min-h-screen w-full flex flex-col relative">
         <!-- Header/Navigation -->
         <header class="w-full z-10 p-6 flex justify-center items-center absolute top-0 left-0">
             <div class="w-[90%] max-w-[2100px] flex justify-between items-center">
                 <a href="index.html" class="text-xl md:text-2xl font-medium text-white uppercase tracking-wide">PROXY INDUSTRIAL INC.</a>
-                <nav class="hidden md:flex space-x-6 font-normal">
+                <nav class="hidden lg:flex space-x-6 font-normal text-white">
                     <a href="index.html" class="text-white underline underline-offset-[6px] decoration-1 decoration-white">Home</a>
-                    <a href="about.html" class="text-white hover:text-gray-300">About</a>
+        <a href="index.html#how-we-help" class="hover:opacity-70">How We Help</a>
+                <a href="index.html#how-we-work" class="hover:opacity-70">How We Work</a>
+                <a href="about.html" class="text-white hover:text-gray-300">About</a>
                     <a href="contact.html" class="text-white hover:text-gray-300">Contact</a>
                 </nav>
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Toggle menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
@@ -58,49 +72,93 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
             <a href="index.html" class="underline underline-offset-[6px]">Home</a>
-            <a href="about.html" class="hover:text-gray-300">About</a>
+            <a href="index.html#how-we-help" class="hover:opacity-70">How We Help</a>
+                <a href="index.html#how-we-work" class="hover:opacity-70">How We Work</a>
+                <a href="about.html" class="hover:text-gray-300">About</a>
             <a href="contact.html" class="hover:text-gray-300">Contact</a>
         </div>
 
         <!-- Hero Content -->
-        <div class="flex-grow flex flex-col items-center justify-center text-center px-4 w-full h-full max-w-[1200px] mx-auto">
-            <h1 class="text-4xl md:text-[54px] lg:text-[58px] font-normal text-white mb-6 whitespace-normal md:whitespace-nowrap tracking-tight">Tier-One Quality. Global Economics.</h1>
-            <p class="text-lg md:text-xl text-white mb-2 font-normal">We bridge North American OEMs with vetted, ISO-certified overseas production facilities.</p>
-            <p class="text-lg md:text-xl text-white mb-10 font-normal">Get significant cost savings on custom metal components with risk-free, local project management.</p>
-            <a href="#quote" class="inline-block bg-white text-black text-sm uppercase font-semibold py-[18px] px-[45px] rounded-full hover:bg-gray-200 transition duration-300">REQUEST A QUOTE</a>
+        <div class="flex-grow flex flex-col items-center justify-center text-center px-6 py-36 w-full max-w-[1200px] mx-auto">
+            <h1 class="text-4xl md:text-[54px] lg:text-[58px] font-normal text-white mb-6 leading-tight tracking-tight">Managed from problem to completion.</h1>
+            <p class="text-lg md:text-xl text-white mb-10 font-normal max-w-[850px] leading-relaxed">We coordinate suppliers, engineers, manufacturers, and service providers around your requirements, with clear responsibilities, schedules, and communication throughout.</p>
+            <a href="#quote" class="inline-block bg-white text-black text-sm uppercase font-semibold py-[18px] px-[45px] rounded-full hover:bg-gray-200 transition duration-300">DISCUSS YOUR PROJECT</a>
         </div>
     </section>
 
     <!-- Main Content Container -->
     <main class="w-full">
         
-        <!-- Section 2: Core Capabilities -->
-        <section class="min-h-screen flex flex-col justify-center w-full py-16 core-capabilities-section">
-            <div class="w-[90%] mx-auto max-w-[2100px]">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-brand-black mb-[50px] text-left">Core Capabilities</h2>
-                
-                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
-                <!-- Column 1 -->
-                <div class="flex flex-col">
-                    <img src="02_Assets/Milling Gear Surface.jpg" alt="Milling Gear Surface" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
-                    <p class="text-lg leading-relaxed text-brand-black mb-4">High-mix, medium-to-high volume production for complex geometries.</p>
-                    <p class="text-lg leading-relaxed text-brand-black">We offer 3, 4, and 5-axis milling and turning for a wide range of materials including aluminum, stainless steel, and specialty alloys. Tight GD&T adherence guaranteed.</p>
+        <section id="how-we-help" class="w-full py-16 md:py-24">
+            <div class="w-[90%] mx-auto max-w-[1440px]">
+                <p class="text-sm uppercase tracking-widest mb-4">How we help</p>
+                <h2 class="text-4xl md:text-5xl font-normal mb-6 max-w-[900px]">A practical path through a complex industrial problem.</h2>
+                <p class="text-lg leading-relaxed max-w-[800px] mb-12">When procurement, technical requirements, and delivery depend on several people, we bring the work into one coordinated plan.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="border-t border-gray-400 pt-6">
+                        <p class="text-sm mb-6">01 / PROCUREMENT</p>
+                        <h3 class="text-2xl mb-4">Find a workable supply option.</h3>
+                        <p class="text-lg leading-relaxed">We clarify requirements, investigate local and international sourcing options, compare suppliers, and manage purchasing and delivery around your project needs.</p>
+                    </article>
+                    <article class="border-t border-gray-400 pt-6">
+                        <p class="text-sm mb-6">02 / EQUIPMENT SUPPORT</p>
+                        <h3 class="text-2xl mb-4">Bring the right specialists together.</h3>
+                        <p class="text-lg leading-relaxed">We coordinate the engineering input, suppliers, manufacturing, testing, and installation resources needed to support a replacement, modification, or equipment issue.</p>
+                    </article>
+                    <article class="border-t border-gray-400 pt-6">
+                        <p class="text-sm mb-6">03 / PROJECT MANAGEMENT</p>
+                        <h3 class="text-2xl mb-4">Keep the whole job moving.</h3>
+                        <p class="text-lg leading-relaxed">We establish scope, responsibilities, milestones, and dependencies, then track commitments and coordinate decisions through the agreed work.</p>
+                    </article>
                 </div>
-                
-                <!-- Column 2 -->
-                <div class="flex flex-col">
-                    <img src="02_Assets/Casting.jpg" alt="Casting" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
-                    <p class="text-lg leading-relaxed text-brand-black mb-4">Reliable supply chain solutions for heavy industry. We specialize in ductile iron, gray iron, and steel sand castings, as well as closed-die forgings.</p>
-                    <p class="text-lg leading-relaxed text-brand-black">Ideal for agricultural, mining, and heavy equipment manufacturers struggling with local foundry capacity.</p>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="flex flex-col">
-                    <img src="02_Assets/CMM.jpg" alt="CMM Inspection" class="w-full h-auto block grayscale mb-4 md:mb-[18px]">
-                    <p class="text-lg leading-relaxed text-brand-black mb-4">Overseas pricing without the friction. All partner facilities are strictly ISO 9001:2015 certified.</p>
-                    <p class="text-lg leading-relaxed text-brand-black">We provide full material certifications, CMM inspection reports, and handle all ocean/air freight, customs clearance, and local delivery directly to your dock.</p>
-                </div>
+                <p class="text-base leading-relaxed mt-10 max-w-[1000px]">Qualified providers perform engineering, manufacturing, testing, and installation as required. Proxy Industrial manages the coordination, with technical approvals and customer decisions assigned to the appropriate owners.</p>
+                <p class="text-base leading-relaxed mt-4 max-w-[1000px]">Where the solution calls for custom parts, sourcing can include CNC machining, castings, and forgings. Quality requirements, inspections, and documentation are agreed for the project and verified through the relevant providers.</p>
             </div>
+        </section>
+
+        <section class="w-full py-16 md:py-24 bg-brand-accent text-white">
+            <div class="w-[90%] mx-auto max-w-[1440px] grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-sm uppercase tracking-widest mb-4">When to call us</p>
+                    <h2 class="text-4xl md:text-5xl font-normal leading-tight">A missing part.<br>A stalled project.<br>Too many moving pieces.</h2>
+                </div>
+                <ul class="space-y-6 text-lg leading-relaxed">
+                    <li class="border-b border-white/30 pb-6">A critical component is unavailable, obsolete, or difficult to source, and you need a practical way forward.</li>
+                    <li class="border-b border-white/30 pb-6">An equipment replacement or modification needs input from engineers, suppliers, and technicians before work can proceed.</li>
+                    <li>Your team needs someone to coordinate procurement, testing, and installation around a shared schedule.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="how-we-work" class="w-full py-16 md:py-24">
+            <div class="w-[90%] mx-auto max-w-[1440px]">
+                <p class="text-sm uppercase tracking-widest mb-4">How we work</p>
+                <h2 class="text-4xl md:text-5xl font-normal mb-6">From the first question to the final handover.</h2>
+                <p class="text-lg leading-relaxed max-w-[800px] mb-12">Start with the problem as you understand it. You do not need a finished specification or drawing to begin a conversation.</p>
+                <ol class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <li class="border-t border-gray-400 pt-5"><p class="text-sm mb-4">01</p><h3 class="text-xl mb-3">Understand</h3><p class="leading-relaxed">Clarify the problem, desired outcome, constraints, and people who need to be involved.</p></li>
+                    <li class="border-t border-gray-400 pt-5"><p class="text-sm mb-4">02</p><h3 class="text-xl mb-3">Assess options</h3><p class="leading-relaxed">Investigate practical routes and compare requirements, costs, timing, and trade-offs.</p></li>
+                    <li class="border-t border-gray-400 pt-5"><p class="text-sm mb-4">03</p><h3 class="text-xl mb-3">Agree the plan</h3><p class="leading-relaxed">Set the scope, responsibilities, schedule, approval points, and completion criteria together.</p></li>
+                    <li class="border-t border-gray-400 pt-5"><p class="text-sm mb-4">04</p><h3 class="text-xl mb-3">Coordinate</h3><p class="leading-relaxed">Track progress, connect the right people, and make open issues and required decisions visible.</p></li>
+                    <li class="border-t border-gray-400 pt-5"><p class="text-sm mb-4">05</p><h3 class="text-xl mb-3">Close out</h3><p class="leading-relaxed">Coordinate verification against the agreed criteria and bring together relevant handover documentation.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="w-full py-16 md:py-20 border-y border-gray-400">
+            <div class="w-[90%] mx-auto max-w-[1440px] grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-sm uppercase tracking-widest mb-4">Clear ownership. Clear communication.</p>
+                    <h2 class="text-4xl md:text-5xl font-normal mb-6">Know where things stand. Know what comes next.</h2>
+                    <p class="text-lg leading-relaxed">You have one primary contact responsible for keeping the agreed work coordinated and following through on commitments.</p>
+                    <a href="about.html" class="inline-block mt-6 underline underline-offset-4">Meet your project lead &rarr;</a>
+                </div>
+                <ul class="space-y-5 text-lg leading-relaxed">
+                    <li>A shared plan with milestones, responsibilities, and dependencies.</li>
+                    <li>Progress updates covering open issues and upcoming decisions, at a cadence agreed with you.</li>
+                    <li>Visibility into changes that affect cost or schedule.</li>
+                    <li>The right information reaching engineers, suppliers, technicians, and customer stakeholders when they need it.</li>
+                </ul>
             </div>
         </section>
 
@@ -109,16 +167,16 @@
             <div class="w-[90%] mx-auto max-w-[2100px] grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
             <!-- Left Column -->
             <div>
-                <h2 class="text-[52px] font-normal text-brand-black mb-6 leading-tight">Request a Quote</h2>
-                <p class="text-[20px] font-normal leading-[1.6] text-brand-black mb-4 max-w-[85%]">Tell us about your project requirements, estimated quantities, and target lead times.</p>
-                <p class="text-[20px] font-normal leading-[1.6] text-brand-black max-w-[85%]">Submit the form and our engineering team will reply within 24 hours to securely request your STEP files or PDF blueprints for quoting.</p>
+                <h2 class="text-4xl md:text-[52px] font-normal text-brand-black mb-6 leading-tight">Discuss Your Project</h2>
+                <p class="text-[20px] font-normal leading-[1.6] text-brand-black mb-4 max-w-[85%]">Tell us what is getting in the way, what you need to achieve, and where and when the work is needed.</p>
+                <p class="text-[20px] font-normal leading-[1.6] text-brand-black max-w-[85%]">We’ll follow up to discuss your needs and determine the next step. Drawings and specifications can follow when relevant.</p>
             </div>
             
             <!-- Right Column (Form) -->
             <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
                 <!-- Replace with your Access Key -->
 <input type="hidden" name="access_key" value="a857c4c8-fc60-42c9-b548-bb53009e4460">
-                <input type="hidden" name="subject" value="New Quote Request - Proxy Industrial">
+                <input type="hidden" name="subject" value="New Project Inquiry - Proxy Industrial">
                 <input type="hidden" name="from_name" value="Proxy Industrial Website">
                 <!-- Honeypot spam protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
@@ -144,34 +202,39 @@
                     <input type="email" id="email" name="email" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black">
                 </div>
                 
-                <!-- Row 3: Message -->
                 <div>
-                    <label for="message" class="block text-[16px] font-medium text-[#333] mb-[5px]">Message (required)</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black"></textarea>
+                    <label for="company" class="block text-[16px] font-medium text-[#333] mb-[5px]">Company (optional)</label>
+                    <input type="text" id="company" name="company" autocomplete="organization" class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black">
+                </div>
+                <!-- Project context -->
+                <div>
+                    <label for="message" class="block text-[16px] font-medium text-[#333] mb-[5px]">What do you need to resolve? (required)</label>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="project-help" class="w-full bg-transparent border border-black rounded-[14px] px-[18px] py-[14px] text-[16px] focus:outline-none focus:ring-1 focus:ring-black"></textarea>
                 </div>
                 
+                <p id="project-help" class="text-sm leading-relaxed">Include the problem, desired outcome, project location, and target timing. Share what you know so far.</p>
                 <!-- Submit Button -->
                 <div>
-                    <button type="submit" class="bg-brand-accent text-white text-[16px] font-medium uppercase px-10 py-4 rounded-[50px] hover:opacity-90 transition duration-300 border-none mt-2">SEND</button>
+                    <button type="submit" class="bg-brand-accent text-white text-[16px] font-medium uppercase px-10 py-4 rounded-[50px] hover:opacity-90 transition duration-300 border-none mt-2">SEND INQUIRY</button>
                 </div>
             </form>
             </div>
         </section>
 
     <!-- Footer -->
-    <footer class="w-full bg-brand-greige pt-[180px] pb-[100px] border-t border-gray-300 mt-auto">
+    <footer class="w-full bg-brand-greige pt-20 pb-16 border-t border-gray-300 mt-auto">
         <div class="w-[90%] mx-auto max-w-[2100px] flex flex-col md:flex-row justify-between gap-y-12 pr-[4vw] xl:pr-[8vw]">
             <!-- Column 1: Brand -->
             <div class="md:w-1/2 lg:w-6/12">
-                <h3 class="text-[40px] font-normal text-brand-black mb-3">Proxy Industrial Inc.</h3>
-                <p class="text-[20px] font-medium leading-[1.6] text-brand-black">Global manufacturing, local accountability.</p>
+                <h3 class="text-3xl md:text-[40px] font-normal text-brand-black mb-3">Proxy Industrial Inc.</h3>
+                <p class="text-[20px] font-medium leading-[1.6] text-brand-black">Your Proxy for getting it done.</p>
             </div>
             <!-- Column 2 & 3: Info Container -->
             <div class="md:w-1/2 lg:w-6/12 flex flex-col sm:flex-row justify-end sm:space-x-[10%] lg:space-x-[15%]">
                 <!-- Column 2 -->
                 <div class="mb-12 sm:mb-0">
                     <h4 class="text-[24px] font-normal text-brand-black mb-5">Location</h4>
-                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">203-2150 Winston Park Dr<br>Suite #1560<br>Oakville ON L6H 5V1<br>Canada</p>
+                    <p class="text-[18px] font-medium leading-relaxed text-brand-black">203-2150 Winston Park Dr<br>Suite #1563<br>Oakville ON L6H 5V1<br>Canada</p>
                 </div>
                 <!-- Column 3 -->
                 <div>
